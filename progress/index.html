@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Reading Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📖 Reading Progress</h1>
+
+    <div class="progress-circle">
+      <svg>
+        <circle cx="80" cy="80" r="70"></circle>
+        <circle cx="80" cy="80" r="70" id="progress"></circle>
+      </svg>
+      <div class="number">
+        <h2 id="percent">0%</h2>
+      </div>
+    </div>
+
+    <div class="book-cover">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Book Cover">
+    </div>
+
+    <button onclick="increaseProgress()">Read More Pages ➡️</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
